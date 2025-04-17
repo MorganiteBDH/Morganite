@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Morganite</title>
+  <style>
+    body {
+      background: url('49DE38C9-32D9-4E00-AD4E-295761370492.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background: #330033; /* Mor arka plan */
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #cc66ff; /* Mor alt sınır */
+    }
+
+    .navbar a {
+      color: #ffe6f7;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 18px;
+      margin: 0 10px;
+      transition: 0.4s ease;
+      border-radius: 5px;
+      background-color: #660066; /* Mor kutu rengi */
+      border: 2px solid #cc66ff; /* Mor kenar çerçevesi */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Hafif gölge efekti */
+    }
+
+    .navbar a:hover {
+      background-color: #99004d; /* Hoverda daha koyu mor */
+      color: #ff99cc;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7); /* Hoverda daha belirgin gölge */
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      background-color: #cc66ff; /* Mor alt çizgi */
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar a:hover::after {
+      transform: scaleX(1); /* Alt çizgi animasyonu */
+    }
+
+    /* Sayfa içeriği */
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: rgba(10, 0, 10, 0.7);
+      margin: 50px auto;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      color: #cc66ff;
+      font-size: 60px;
+      text-shadow: 2px 2px 8px #660066;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #ffb3d9;
+      font-size: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.8;
+      text-shadow: 1px 1px 3px #330033;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 24px;
+      color: #ff99cc;
+      margin: 30px 0;
+    }
+
+    .footer {
+      background-color: rgba(26, 0, 26, 0.9);
+      color: #ff99cc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Main Menu</a>
+    <a href="My Projects.html">My Projects</a>
+    <a href="My Drawings.html">My Drawings</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Communication.html">Communication</a>
+  </div>
+
+  <div class="content">
+    <h1>About Me</h1>
+
+    <p>Hi, Welcome! I'm Enes Adil ERTÜRK!</p>
+   
+    <p>If I’m not mistaken, my interest in Cartoon & Animation and Graphic Design has been growing since I was in seventh grade. 
+    I actually have this quiet thing I adore: learning, experiencing.
+    It brings me such joy to create characters and worlds inspired by my life and my friends.</p>
+
+    <p>My greatest — and perhaps the saddest — story is about my main character, the one I’ve been dreaming of and drawing for so long now.
+    I just love him. Even in my darkest, most silent moments, I thought of him. And to this day, I continue to pour pieces of my life into his world. 
+    Maybe one day, I will have to close this chapter and finally let him go. His name is <strong>Morganite</strong>.</p>
+
+    <p>My greatest ambition in this industry is not only to succeed but to prove myself as a team player. 
+    I believe that in animation, teamwork isn’t just a requirement — it’s the doorway to a world where everyone can share their art.</p>
+
+    <p><strong>Morganite’s</strong> ideal world is a place he calls the <em>“Lovely Lands.”</em></p>
+
+    <div class="quote">“Where I get to hold hands, and where I get lost in wonderlands.”</div>
+
+    <p>He must outrun the harsh truths of his universe — a world set ten thousand years into the future, 
+    where technology, and everything that once gleamed with youth and warmth, has been forbidden.</p>
+
+    <div class="quote">
+      And for the sake of the damaged generations,<br>
+      Those who bellow in riot against that grim world,<br>
+      Those who tremble at the approach of vile men,<br>
+      He vowed never to surrender.
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Morganite | All rights reserved.
+  </div>
+
+</body>
+</html>

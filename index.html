@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Morganite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #330033;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #cc66ff;
+    }
+
+    .navbar a {
+      color: #ffe6f7;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 18px;
+      margin: 0 10px;
+      transition: 0.4s ease;
+      border-radius: 5px;
+      background-color: #660066;
+      border: 2px solid #cc66ff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    .navbar a:hover {
+      background-color: #99004d;
+      color: #ff99cc;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      background-color: #cc66ff;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar a:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* Sayfa içeriği */
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #cc66ff;
+      font-size: 60px;
+      text-shadow: 2px 2px 8px #660066;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      color: #ffb3d9;
+      font-size: 22px;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.7;
+      text-shadow: 1px 1px 3px #330033;
+      animation: fadeIn 3s ease;
+    }
+
+    /* Dekoratif çizgi */
+    .decor-line {
+      width: 200px;
+      height: 3px;
+      background: linear-gradient(to right, #660066, #cc66ff, #660066);
+      margin: 30px auto;
+      border-radius: 5px;
+      animation: fadeIn 2.5s ease;
+    }
+
+    /* Öne çıkan kutucuklar */
+    .highlight-box {
+      background-color: #1a001a;
+      border: 1px solid #cc66ff;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      transition: 0.4s ease;
+      animation: fadeIn 3.5s ease;
+    }
+
+    .highlight-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.9);
+    }
+
+    /* İkonlar */
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: #ffe6f7;
+      font-size: 30px;
+      margin: 0 12px;
+      transition: 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff99cc;
+      transform: scale(1.2);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #1a001a;
+      color: #ff99cc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* Animasyon */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Main Menu</a>
+    <a href="My Projects.html">My Projects</a>
+    <a href="My Drawings.html">My Drawings</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Communication.html">Communication</a>
+  </div>
+
+  <div class="content">
+    <h1>Je suis Morganite, bienvenue!</h1>
+    <div class="decor-line"></div>
+    <p>Ceci est mon portfolio.</p>
+    <p>Okay this is going to be a place where I share my drawings and my stories and maybe even my projects? Sorry I had to switch to English haha.</p>
+
+    <div class="highlight-box">
+      <h2 style="color:#ff99cc; margin-bottom: 10px;">What to expect here?</h2>
+      <p style="color:#ffe6f7;">Here, you will be discovering my projects, drawings, maybe poems that I will release weekly. Maybe even more? Who knows without ever stepping a foot down?</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/adilerturk_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:adilerturk2006@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Morganite | All rights reserved.
+  </div>
+
+</body>
+</html>

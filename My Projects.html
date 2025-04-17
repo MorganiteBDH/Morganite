@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      opacity: 0; /* Initially hide the page content */
+      animation: fadeIn 2s ease-in-out forwards; /* Apply fade-in animation */
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #330033;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #cc66ff;
+    }
+
+    .navbar a {
+      color: #ffe6f7;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 18px;
+      margin: 0 10px;
+      transition: 0.4s ease;
+      border-radius: 5px;
+      background-color: #660066;
+      border: 2px solid #cc66ff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .navbar a:hover {
+      background-color: #99004d;
+      color: #ff99cc;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      color: #cc66ff;
+      font-size: 50px;
+      text-shadow: 2px 2px 8px #660066;
+      margin: 40px 0 20px;
+    }
+
+    h2 {
+      color: #ff99cc;
+      font-size: 36px;
+      margin: 30px 0 20px;
+      text-shadow: 1px 1px 5px #330033;
+    }
+
+    .album-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .album-item {
+      background-color: #1a001a;
+      border: 2px solid #cc66ff; /* varsayılan mor çerçeve */
+      border-radius: 12px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      transition: 0.3s ease;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+    /* Karma albümü dış çerçevesi kırmızı */
+    .karma {
+      border: 2px solid red;
+    }
+
+    .album-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+    }
+
+    .album-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    /* Albüm başlıkları */
+    .album-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 5px #330033;
+    }
+
+    /* Albüm açıklamaları */
+    .album-desc {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Karma albümü için özel renkler */
+    .karma .album-title {
+      color: red;
+    }
+
+    .karma .album-desc {
+      color: #ff6666;
+    }
+
+    /* Melancholia albümü için mor tema */
+    .melancholia .album-title {
+      color: #cc66ff;
+    }
+
+    .melancholia .album-desc {
+      color: #ffb3d9;
+    }
+
+    .footer {
+      background-color: #1a001a;
+      color: #ff99cc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      border-top: 2px solid #cc66ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Main Menu</a>
+    <a href="My Projects.html">My Projects</a>
+    <a href="My Drawings.html">My Drawings</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Communication.html">Communication</a>
+  </div>
+
+  <h1>My Projects</h1>
+
+  <h2>🎵 Music</h2>
+
+  <div class="album-gallery">
+
+    <div class="album-item karma">
+      <img src="IMG_20220824_090417_137.JPG" alt="Karma">
+      <div class="album-title">Karma</div>
+      <div class="album-desc">An electric pop album which might trigger your anxiety! Released in 2022.</div>
+    </div>
+
+    <div class="album-item melancholia">
+      <img src="49DE38C9-32D9-4E00-AD4E-295761370492.jpg" alt="Melancholia">
+      <div class="album-title">Melancholia</div>
+      <div class="album-desc">A rock-pop storyline about situationship, bring your tissues! Released in 2024.</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Morganite | All rights reserved.
+  </div>
+
+</body>
+</html>
